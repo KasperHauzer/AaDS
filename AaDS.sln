@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AaDS", "AaDS\AaDS.csproj", "{F3B1C9FB-6A7C-493A-B339-5EA5ACE1AC66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstLab", "FirstLab\FirstLab.csproj", "{B6BA08F7-F09C-44D8-9704-8438BB1770D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3B1C9FB-6A7C-493A-B339-5EA5ACE1AC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B1C9FB-6A7C-493A-B339-5EA5ACE1AC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B1C9FB-6A7C-493A-B339-5EA5ACE1AC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B1C9FB-6A7C-493A-B339-5EA5ACE1AC66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

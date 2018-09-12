@@ -1,0 +1,10 @@
+# Файлы и папки основного каталога
+.vs
+AaDS/bin
+AaDS/obj
+AaDS/AaDS.csproj
+
+# Файлы и папки первой лабораторной работы
+FirstLab/bin
+FirstLab/obj
+FirstLab/FirstLab.csproj
