@@ -9,7 +9,7 @@ namespace FirstLab
     public static class Model
     {
         /// <summary>
-        /// Оповещает о том, что стек вызовов был переполнен, описание передается как первый аргумент.
+        /// Оповещает о том, что было обнаружено входное число, которое может повлечь переполнение стека вызовов.
         /// </summary>
         public static event Action<Object, EventArgs> DetectedDangerNumber;
 
