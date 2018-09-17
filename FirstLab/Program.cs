@@ -25,7 +25,8 @@ namespace FirstLab
                 //Сообщаем пользователю о том, что процес поддсчета x(n)-го элемента начат, 
                 //и меняем цвет шрифта для выделения результатов.
                 Console.WriteLine("\n<Процесс начат>");
-                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
 
                 //Подсчет функцией.
                 Task solveByFunc = Task.Factory.StartNew(delegate
