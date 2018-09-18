@@ -20,13 +20,12 @@ namespace FirstLab
                 Int32 n = 0;
                 Console.Write("Введите целое число: ");
                 while (!Int32.TryParse(Console.ReadLine(), out n) || n < 0)
-                    Console.Write("Введите целое число больше -1: ");
+                    Console.Write("Введите целое число (>= 0): ");
 
                 //Сообщаем пользователю о том, что процес поддсчета x(n)-го элемента начат, 
                 //и меняем цвет шрифта для выделения результатов.
                 Console.WriteLine("\n<Процесс начат>");
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.ForegroundColor = ConsoleColor.Magenta;
 
                 //Подсчет функцией.
                 Task solveByFunc = Task.Factory.StartNew(delegate
@@ -81,7 +80,7 @@ namespace FirstLab
                                typle.delay.Milliseconds + " мс";
 
             //Составляем строку из входных параметров для вывода на консоль и выводим ее.
-            String showingString = $"\n\t{config}.\n\tОтвет: {typle.answer}\n\tЗадержка: {time}";
+            String showingString = $"\n\t{config}.\n\tОтвет: {typle.answer}\n\tВремя: {time}";
             Console.WriteLine(showingString);
         }
 

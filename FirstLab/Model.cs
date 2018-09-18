@@ -73,7 +73,7 @@ namespace FirstLab
             Int32 answer = default(Int32);
 
             stopwatch.Start();
-            answer = RunRecursion(2, n, 0, 1, -1);
+            answer = RunRecursion(n);
             stopwatch.Stop();
 
             return (answer, stopwatch.Elapsed, true);
@@ -84,20 +84,13 @@ namespace FirstLab
         /// Рекурсивно подсчитывает x(n)-й эемент.
         /// </summary>
         /// <returns>x(n)-й эемент.</returns>
-        /// <param name="i">Номер текущего подсчитываемого элемента.</param>
-        /// <param name="number">Номер требуемого элемента.</param>
-        /// <param name="current">Текущий элемент.</param>
-        /// <param name="previous">Предыдущий элемент.</param>
-        /// <param name="superPrevious">Очень предыдущий элемент (дважды предыдущий).</param>
-        static Int32 RunRecursion(Int32 i, Int32 number, Int32 current, Int32 previous, Int32 superPrevious)
+        /// <param name="n">Номер требуемого элемента.</param>
+        static Int32 RunRecursion(Int32 n)
         {
-            if (number == 0) return superPrevious;
-            if (number == 1) return previous;
+            if (n == 0) return -1;
+            if (n == 1) return 1;
 
-                current = 12 * i - 2 * previous - superPrevious;
-            return i == number ?
-                current :
-                RunRecursion(++i, number, 0, current, previous);
+            return 12 * n - 2 * RunRecursion(n - 1) - RunRecursion(n - 2);
         }
 
         /// <summary>
