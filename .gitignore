@@ -6,3 +6,6 @@ AaDS/obj
 # Файлы и папки первой лабораторной работы
 FirstLab/bin
 FirstLab/obj
+
+# Файлы и папки второй лабораторной работы
+SecondLab/SecondLab.xcodeproj/xcuserdata/arsanukaev.xcuserdatad/xcdebugger/
