@@ -3,6 +3,9 @@
 AaDS/bin
 AaDS/obj
 
+# Файлы и каталоги по курсу ИТМО
+ITMO/obj
+
 # Файлы и папки первой лабораторной работы
 FirstLab/bin
 FirstLab/obj
