@@ -25,6 +25,9 @@ class ViewController: NSViewController {
     */
     @IBOutlet weak var Console: NSTextField!
     
+    /**
+     4 5 2 3 6 1 7
+    */
     @IBAction func bCalculate(_ sender: NSButton) {
             
         //Основная входная информация: длины работ и число работников и константа T.
@@ -45,7 +48,7 @@ class ViewController: NSViewController {
         //Выводим заголовки столбцов
         Console.stringValue = ""
         for x in 0..<T {
-            Console.stringValue += "\t\(x)"
+            Console.stringValue += "\t\(x + 1)"
         }
         
         //Вывод в консоль результатов.
@@ -138,9 +141,21 @@ class ViewController: NSViewController {
     func GetT() -> Int? {
         
         if let countOfEmployees = GetCountOfEmployees(), let works = GetWorks() {
-            return works.max()! >= GetSumm(from: works) / countOfEmployees ?
-                works.max()! :
-                GetSumm(from: works) / countOfEmployees
+            
+            if works.max()! >= GetSumm(from: works) / countOfEmployees {
+                return works.max()!
+            }
+            else {
+                let a = GetSumm(from: works)
+                let b = countOfEmployees
+                
+                if (a % b) != 0 {
+                    return Int(a / b) + 1
+                }
+                else {
+                    return Int(a / b)
+                }
+            }
         }
         
         return nil
