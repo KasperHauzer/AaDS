@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class ViewController: NSViewController, NSTableViewDataSource {
 
     @IBOutlet weak var tfPathToFile: NSTextField!
     
@@ -18,9 +18,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     @IBOutlet weak var tableView: NSTableView!
     
-    /**
-     Список работ для каждого работника.
-     */
     var works = Array<Array<String>>.init()
     
     @IBAction func Calculate(_ sender: NSButton)
@@ -30,9 +27,9 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
         works = AppDelegate.setDestribution(countOfEmployee: countOfEmployees())
         table.dataSource = self
-        table.delegate = self
+        //table.delegate = self
         
-        tableView.reloadData()
+        table.reloadData()
     }
     
     /**

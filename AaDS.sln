@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AaDS", "AaDS\AaDS.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstLab", "FirstLab\FirstLab.csproj", "{B6BA08F7-F09C-44D8-9704-8438BB1770D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO", "ITMO\ITMO.csproj", "{1314DB08-58D3-47B9-872E-FC1A58AEA0F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itmo", "Itmo\Itmo.csproj", "{20CF7BAA-2DFF-4D52-B2D8-5A00E55072B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +21,9 @@ Global
 		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6BA08F7-F09C-44D8-9704-8438BB1770D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1314DB08-58D3-47B9-872E-FC1A58AEA0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1314DB08-58D3-47B9-872E-FC1A58AEA0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1314DB08-58D3-47B9-872E-FC1A58AEA0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1314DB08-58D3-47B9-872E-FC1A58AEA0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CF7BAA-2DFF-4D52-B2D8-5A00E55072B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CF7BAA-2DFF-4D52-B2D8-5A00E55072B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CF7BAA-2DFF-4D52-B2D8-5A00E55072B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CF7BAA-2DFF-4D52-B2D8-5A00E55072B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
